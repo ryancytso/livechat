@@ -1,0 +1,34 @@
+// each user assigned with random number (1-100) 
+// frontend, button will update/refresh number assigned
+// everyone will see current number assigned to every user connected to the system
+// when user logs in, updates number, or quits the system
+// displayed numbesr will update accordingly
+
+// bidirectional communication channel between client and server
+
+// web framework
+// HTML webpage to serve a form and list of messages
+
+// using node.js framework "express" 
+// create "package.json" manifest file that describes project 
+
+{
+  "name"; "live log",
+  "version"; "1",
+  "description"; "user tracker",
+  "dependencies"; {}
+}
+
+// to populate dependencies
+// npm install express@4.15.2
+
+var app = require('express')();
+var http = require('http').createServer(app);
+
+app.get('/', (req, res) => {
+  res.send('<h1>Hello world</h1>');
+});
+
+http.listen(3000, () => {
+  console.log('listening on *:3000');
+});
