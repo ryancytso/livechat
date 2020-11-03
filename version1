@@ -1,8 +1,26 @@
 // each user assigned with random number (1-100) 
+
+var userNum = Math.floor(Math.random()*100)+1;
+console.log(userNum);
+
 // frontend, button will update/refresh number assigned
+
+// HTML
+<button type="submit" onClick="refreshNum()">Refresh Button</Button>
+
+// Javascript
+<script>
+function refreshNum(){
+  window.location.reload();
+}
+</script>
+
 // everyone will see current number assigned to every user connected to the system
+
+print (userNum)
+
 // when user logs in, updates number, or quits the system
-// displayed numbesr will update accordingly
+// displayed numbers will update accordingly
 
 // bidirectional communication channel between client and server
 
