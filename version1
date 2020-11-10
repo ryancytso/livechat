@@ -1,3 +1,14 @@
+function randomNumber() {
+    var userNum = Math.floor(Math.random() * 100)+1;
+    console.log(userNum)
+}
+
+<input type='button' onClick="randomNumber()" value="Generate"></input>
+
+
+
+
+
 // each user assigned with random number (1-100) 
 
 var userNum = Math.floor(Math.random()*100)+1;
